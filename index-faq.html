@@ -12,7 +12,9 @@ input[id="menuicon"] + label {
 	margin-left: 5px;
 	width:35px;
 	height:25px;
-	position:relative;
+	position:fixed;
+	left: 12px;
+	top: 12px;
 	cursor:pointer;}
 input[id="menuicon"] + label span {
 	display:block;
@@ -37,7 +39,7 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
 div[class="sidebar"] {
 	width:300px;
 	height:100%;
-	background:#5a5865;
+	background:#5d5b6f;
 	position:fixed;
 	top:0;
 	left:-300px;
@@ -54,9 +56,9 @@ span[id="line"]	{
 	    height:4px;
 	    background:#5a5865;}
 	
-.accordion {position:absolute;
-	top:30%;
-	left:50%;
+.accordion {position:fixed;
+	top:200px;
+	left:650px;
 	transform:translateX(-50%);
 	width:500px;}
 input[id*="answer"] {display:none;}
@@ -77,7 +79,7 @@ input[id*="answer"] + label em {
 	height:30px;
 	margin-top:-15px;
 	display:inline-block;
-	background:url('./img/arrow.png') 0 0 no-repeat;}
+	background:url('../../../img/arrow.png') 0 0 no-repeat;}
 input[id*="answer"] + label + div {
 	max-height:0;
 	transition: all .35s;
@@ -91,6 +93,11 @@ input[id*="answer"]:checked + label + div {max-height:100px;}
 input[id*="answer"]:checked + label em {background-position:0 -30px;}
 .logo {margin: 10%;
 }
+div[class="img"] {
+	position:fixed;
+	top:0;
+	left:200px;
+	}
 </style>
 <input type="checkbox" id="menuicon">
 <label for="menuicon">
@@ -101,14 +108,13 @@ input[id*="answer"]:checked + label em {background-position:0 -30px;}
 <div class="sidebar">
 	  <a href="index.html"><img src="https://github.com/sigmagma/black-sigma/blob/master/logo.png?raw=true" width="80%" height="" alt="logo" class="logo"/></a>
 <ul style="list-style-type:none;">
-  <li><a href="index-ehddkfl.html">동아리</a></li>
-  <li><a href="index-rhddus.html">공연</a></li>
-  <li><a href="#">FAQ</a></li>
+  <li><a href="index-ehddkfl1.html"><img src="images/menubar1.gif" width="84" height="34" alt=""/></a></li>
+  <li><a href="index-rhddus.html"><img src="images/menubar2.gif" width="84" height="46" alt=""/></a></li>
+  <li><a href="index-faq.html"><img src="images/menubar3.jpg" width="84" height="39" alt=""/></a></li>
 </ul>
 </div>
 <body>
-	<h3>FAQ</h3>
-	<span id="line"></span>
+<div class="img"><img src="images/FAQ_02.jpg" width="875" height="147" alt=""/></div>
 	<div class="accordion">
     <input type="checkbox" id="answer01">
 	<label for="answer01">Q. 연습은 언제 하나요? 시간이 정해져 있나요?<em></em></label>

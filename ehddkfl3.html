@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BLACK-SIGMA</title>
+</head>
+<style>
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {
+	display:block;
+	margin:15px;
+	margin-left: 5px;
+	width:35px;
+	height:25px;
+	position:fixed;
+	left: 12px;
+	top: 12px;
+	cursor:pointer;}
+input[id="menuicon"] + label span {
+	display:block;
+	position:absolute;
+	width:100%;
+	height:4px;
+	border-radius:30px;
+	background:#5a5865;
+	transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} 
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#dcdaeb;}
+input[id="menuicon"]:checked + label span:nth-child(1) {
+	top:50%;
+	transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+	bottom:50%;
+	transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {
+	width:300px;
+	height:100%;
+	background:#5d5b6f;
+	position:fixed;
+	top:0;
+	left:-300px;
+	z-index:1;
+	transition:all .35s;
+	text-align: center;}
+input[id="menuicon"]:checked + label + div {left:0;}	
+.accordion {position:absolute;
+	top:30%;
+	left:50%;
+	transform:translateX(-50%);
+	width:500px;}
+input[id*="answer"] {display:none;}
+input[id*="answer"] + label {display:block;
+	padding:20px;
+	border:1px solid #000815;
+	border-bottom:0;
+	color:#dcdaeb;
+	font-weight:900;
+	background:#5a5865;
+	cursor:pointer;
+	position:relative;}
+input[id*="answer"] + label em {
+	position:absolute;
+	top:50%;
+	right:10px;
+	width:30px;
+	height:30px;
+	margin-top:-15px;
+	display:inline-block;
+	background:url('./img/arrow.png') 0 0 no-repeat;}
+input[id*="answer"] + label + div {
+	max-height:0;
+	transition: all .35s;
+	overflow:hidden;
+	background:#fff;
+	font-size:15px;}
+input[id*="answer"] + label + div p {
+	display:inline-block;
+	padding:20px;}
+input[id*="answer"]:checked + label + div {max-height:100px;}
+input[id*="answer"]:checked + label em {background-position:0 -30px;}
+.logo {margin: 10%;
+}
+	td{font-size: 18px; color: #000815;p: 10px;
+	}
+	tr[id*="tjfaud"]{top:10px;}
+</style>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (ehddkfl3.png) -->
+<table id="__01" width="1248" height="1250" border="0" cellpadding="0" cellspacing="0">
+	<input type="checkbox" id="menuicon">
+<label for="menuicon">
+	<span></span>
+	<span></span>
+	<span></span>
+</label>
+<div class="sidebar">
+	  <a href="index.html"><img src="https://github.com/sigmagma/black-sigma/blob/master/logo.png?raw=true" width="80%" height="" alt="logo" class="logo"/></a>
+<ul style="list-style-type:none;">
+  <li><a href="index-ehddkfl1.html"><img src="images/menubar1.gif" width="84" height="34" alt=""/></a></li>
+  <li><a href="index-rhddus.html"><img src="images/menubar2.gif" width="84" height="46" alt=""/></a></li>
+  <li><a href="index-faq.html"><img src="images/menubar3.jpg" width="84" height="39" alt=""/></a></li>
+</ul>
+</div>
+	<tr>
+		<td rowspan="9">&nbsp;</td>
+		<td colspan="5">
+			<img src="images/ehddkfl3_02.jpg" width="879" height="107" alt=""></td>
+		<td rowspan="9">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="index-ehddkfl1.html"><img src="images/ehddkfl3_04.jpg" width="88" height="57" alt=""></a></td>
+		<td>
+			<a href="ehddkfl2.html"><img src="images/ehddkfl3_05.jpg" width="180" height="57" alt=""></a></td>
+		<td>
+			<a href="ehddkfl3.html"><img src="images/ehddkfl3_06.jpg" width="108" height="57" alt=""></a></td>
+		<td colspan="2">
+			<img src="images/ehddkfl3_07.jpg" width="503" height="57" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<p> 저희가 하는 활동은 이런것들이 있습니다.</p>
+			</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/ehddkfl3_09.jpg" width="879" height="61" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<img src="images/ehddkfl3_10.jpg" width="483" height="240" alt=""></td>
+		<td>
+			<img src="images/ehddkfl3_11.jpg" width="396" height="240" alt=""></td>
+	</tr>
+	<tr id="tjfaud">
+		<td colspan="4">
+			<p> 활동 기수의 콘서트</p>
+			<p>본인들이 원하는 곡들로 1년~1년반동안</p>
+			<p>연습한 성과를 뽐내는 자리</p></td>
+		<td><p>학교가 아닌 외부에서 공연을 요청한 </p>
+		  <p>경우입니다.</p>
+		  <p>페이를받고 서는 공연입니다.</p>
+
+</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/ehddkfl3_14.jpg" width="879" height="74" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<img src="images/ehddkfl3_15.jpg" width="483" height="251" alt=""></td>
+		<td>
+			<img src="images/ehddkfl3_16.jpg" width="396" height="251" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<p> 가장 기본이고 중요한 활동이기 때문에</p>
+			<p>밴드부 활동중 가장 많은 부분을 차지합니다.&nbsp;</p>
+<p>&nbsp;</p></td>
+		<td>
+			<p> 밴드부라고 연습만 하지 않습니다.</p>
+			<p>동아리원들과 친목과 휴식,추억을위해</p>
+			<p>1년에 한번씩 바다로 MT를 떠납니다.&nbsp; &nbsp; &nbsp;</p></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="231" height="1" alt=""></td>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="88" height="1" alt=""></td>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="180" height="1" alt=""></td>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="108" height="1" alt=""></td>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="107" height="1" alt=""></td>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="396" height="1" alt=""></td>
+		<td>
+			<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="138" height="1" alt=""></td>
+	</tr>
+</table>
+<!-- End Save for Web Slices -->
+</body>
+</html>

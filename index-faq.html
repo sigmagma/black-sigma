@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BLACK-SIGMA</title>
+</head>
+<style>
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {
+	display:block;
+	margin:15px;
+	margin-left: 5px;
+	width:35px;
+	height:25px;
+	position:fixed;
+	left: 12px;
+	top: 12px;
+	cursor:pointer;}
+input[id="menuicon"] + label span {
+	display:block;
+	position:absolute;
+	width:100%;
+	height:4px;
+	border-radius:30px;
+	background:#5a5865;
+	transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} 
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#dcdaeb;}
+input[id="menuicon"]:checked + label span:nth-child(1) {
+	top:50%;
+	transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+	bottom:50%;
+	transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {
+	width:300px;
+	height:100%;
+	background:#5d5b6f;
+	position:fixed;
+	top:0;
+	left:-300px;
+	z-index:1;
+	transition:all .35s;
+	text-align: center;}
+input[id="menuicon"]:checked + label + div {left:0;}
+	
+span[id="line"]	{
+		position:absolute;
+	    margin:15px;
+	    margin-left: 12%;
+	    width:70%;
+	    height:4px;
+	    background:#5a5865;}
+	
+.accordion {position:fixed;
+	top:200px;
+	left:650px;
+	transform:translateX(-50%);
+	width:500px;}
+input[id*="answer"] {display:none;}
+input[id*="answer"] + label {display:block;
+	padding:20px;
+	border:1px solid #000815;
+	border-bottom:0;
+	color:#dcdaeb;
+	font-weight:900;
+	background:#5a5865;
+	cursor:pointer;
+	position:relative;}
+input[id*="answer"] + label em {
+	position:absolute;
+	top:50%;
+	right:10px;
+	width:30px;
+	height:30px;
+	margin-top:-15px;
+	display:inline-block;
+	background:url('../../../img/arrow.png') 0 0 no-repeat;}
+input[id*="answer"] + label + div {
+	max-height:0;
+	transition: all .35s;
+	overflow:hidden;
+	background:#fff;
+	font-size:15px;}
+input[id*="answer"] + label + div p {
+	display:inline-block;
+	padding:20px;}
+input[id*="answer"]:checked + label + div {max-height:100px;}
+input[id*="answer"]:checked + label em {background-position:0 -30px;}
+.logo {margin: 10%;
+}
+div[class="img"] {
+	position:fixed;
+	top:0;
+	left:200px;
+	}
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+	<span></span>
+	<span></span>
+	<span></span>
+</label>
+<div class="sidebar">
+	  <a href="index.html"><img src="https://github.com/sigmagma/black-sigma/blob/master/logo.png?raw=true" width="80%" height="" alt="logo" class="logo"/></a>
+<ul style="list-style-type:none;">
+  <li><a href="index-ehddkfl1.html"><img src="images/menubar1.gif" width="84" height="34" alt=""/></a></li>
+  <li><a href="index-rhddus.html"><img src="images/menubar2.gif" width="84" height="46" alt=""/></a></li>
+  <li><a href="index-faq.html"><img src="images/menubar3.jpg" width="84" height="39" alt=""/></a></li>
+</ul>
+</div>
+<body>
+<div class="img"><img src="images/FAQ_02.jpg" width="875" height="147" alt=""/></div>
+	<div class="accordion">
+    <input type="checkbox" id="answer01">
+	<label for="answer01">Q. 연습은 언제 하나요? 시간이 정해져 있나요?<em></em></label>
+	<div><p>A. 편한 시간에 와서 하면 됩니다. 공강 때 나와서 해도 좋고, 학교 일과가 모두 끝난 후해도 좋습니다.</p>
+	</div>
+	<input type="checkbox" id="answer02">
+	<label for="answer02">Q. 회비는 얼마인가요?<em></em></label>
+	<div><p>A. 동아리 운영비는 공연으로 받은 페이 등으 사용하기 때문에 회비는 따로 받지 않습니다.</p></div>
+	<input type="checkbox" id="answer03">
+	<label for="answer03">Q. 제가 소유한 악기가 없는데 괜찮을까요?<em></em></label>
+	<div><p>A. 악기들은 동아리방에 구비되어 있습니다. 모두가 사용하는 악기이니 깨끗하게 사용해 주세요.</p></div>
+	<input type="checkbox" id="answer04">
+	<label for="answer04">Q. 악기를 다룰줄 몰라도 괜찮나요?<em></em></label>
+	<div><p>A. 악기 이름부터 잡는 법까지 처음부터 책임지고 가르쳐 드립니다. 하고자 하는 마음가짐만 갖고 오세요!</p></div>
+</div>
+</body>
+</html>
